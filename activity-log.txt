@@ -1,0 +1,5 @@
+2/3/2026 - init
+    - Used template from https://github.com/koji0701/supabase-react-social-media-starter?tab=readme-ov-file
+    - Integrated supabase
+    - Deployed from hopscotch.events with Railway
+    - Created SMTP Server with Brevo
