@@ -6,8 +6,8 @@ console.log("🔌 [SUPABASE] Initializing Supabase client");
 
 // TODO: Replace with your own Supabase URL and publishable key
 // NOTE: These are safe to expose in the frontend. Read more: https://supabase.com/docs/guides/api/api-keys
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
-const SUPABASE_PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
+const SUPABASE_URL = "https://ztjiidumziruslpfpkpe.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_l7mhNsX8JfwQRGCXar-3QA_CV5Wq0Dm";
 
 
 console.log(`🔌 [SUPABASE] Using URL: ${SUPABASE_URL}`);
