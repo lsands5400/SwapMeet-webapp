@@ -39,7 +39,9 @@ type FormData = z.infer<typeof formSchema>;
 
 const Signup = () => {
   const signup = useAuthStore((state) => state.signup);
-  const isAuthLoading = useAuthStore((state) => state.isLoading);
+  const isInitialized = useAuthStore((s) => s.isInitialized);
+  const isFetchingProfile = useAuthStore((s) => s.isFetchingProfile);
+  const isAuthLoading = !isInitialized || isFetchingProfile;
   const navigate = useNavigate(); // For navigation
   const [error, setError] = useState<string | null>(null); // Local form error
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false); // Local submitting state
